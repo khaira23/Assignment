@@ -1,0 +1,9 @@
+#!/bin/bash
+seq 4 | paste -s -d ' ' city
+
+
+#city is the file which having cities 
+#delhi
+#noida
+#Gurgaon
+#haryana

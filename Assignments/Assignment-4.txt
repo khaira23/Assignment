@@ -1,0 +1,13 @@
+#!/bin/bash
+grep -i -v A file
+#file is name of the file name which is having content 
+    #Namibia
+    #Nauru
+    #Nepal
+    #Netherlands
+    #NewZealand
+    #Nicaragua
+    #Niger
+    #Nigeria
+    #NorthKorea
+    #Norway

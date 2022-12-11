@@ -1,0 +1,3 @@
+#!/bin/bash
+read -p "Please enter the name of file: " name
+echo $(tr -d "[:space:]" < $name | tr '[a-z]' '[A-Z]') < $name

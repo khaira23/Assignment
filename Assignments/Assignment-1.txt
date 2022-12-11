@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Enter a number to find its square root: "
+read num
+
+# Loop through until the square root is found
+i=0
+while [ $(( i * i )) -le $num ]
+do
+    sqrt=$i
+    i=$(( i + 1 ))
+done
+
+echo "The square root of $num is $sqrt"

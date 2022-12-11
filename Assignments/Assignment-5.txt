@@ -1,0 +1,32 @@
+
+#!/bin/bash
+#This script will take two numbers as input and swap them if the second number is a 3 digit number
+
+#Function to swap the numbers
+swap()
+{
+  #store the first number in a variable
+  firstNum=$1
+  #store the second number in a variable
+  secondNum=$2
+  #swap the numbers
+  firstNum=$secondNum
+  secondNum=$1
+  echo "First number after swapping: $firstNum"
+  echo "Second number after swapping: $secondNum"
+}
+
+#take input from the user
+echo "Enter the first number: "
+read num1
+echo "Enter the second number: "
+read num2
+
+#check if the second number is a 3 digit number
+if [ ${#num2} -eq 3 ]
+then
+  #call the swap function
+  swap $num1 $num2
+else
+  echo "Second number is not a 3 digit number"
+fi
